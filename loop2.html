@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        li{
+            border: solid 1px black;
+            padding: 20px;
+            margin: 5px;
+            background-color: burlywood;
+            border-radius: 100px;
+            float: left
+        }
+        li1{
+            border: solid 1px black;
+            padding: 20px;
+            margin: 5px;
+            background-color: aqua;
+            border-radius: 100px;
+            float: left;
+        }
+    </style>
+
+    <script>
+
+        function clickme(){
+            for(let i = 100; i <= 1000; i++){
+                if(i % 2 == 0) {
+                document.getElementById("print").innerHTML += "<li>" + i + "</li>";
+                }else{
+                    document.getElementById("print").innerHTML += "<li1>" + i + "</li1>"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>loop</h1>
+    <button onclick="clickme()">Click me</button>
+    <ul id="print">
+
+    </ul>
+    
+</body>
+</html>
