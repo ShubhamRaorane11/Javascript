@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Take input from user
+        function takeInput() {
+            const userInput = prompt("Please enter a number:");
+            if (userInput !== null) {
+                const number = parseFloat(userInput);
+                if (!isNaN(number)) {
+                    document.write("You entered: " + number + "<br>");
+                } else {
+                    document.write("That's not a valid number!<br>");
+                }
+            } else {
+                document.write("No input provided.<br>");
+            }
+        }
+
+        // Call the function to take input
+        takeInput();
+    </script>
+    
+</body>
+</html>
